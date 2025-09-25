@@ -134,16 +134,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS settings
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3001",  # React dev server
-    "http://127.0.0.1:3001",
-    "http://localhost:3000",  # Docker frontend
-    "http://127.0.0.1:3000",
-    "http://frontend:80",     # Docker internal
-]
-
-# For development only - allows all origins (less secure)
-# CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Django REST Framework settings
 REST_FRAMEWORK = {
